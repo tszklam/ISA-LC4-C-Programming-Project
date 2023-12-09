@@ -1,0 +1,22 @@
+<label>              <address>            <contents>           <assembly>          
+                     0000                 9203                                     
+                     0001                 0201                                     
+                     0002                 0000                                     
+POSITIVE             0003                 1679                 ADD R3, R1, #-7     
+                     0004                 0C01                                     
+                     0005                 0000                                     
+NEGATIVE             0006                 12C9                 MUL R1, R3, R1      
+                     0007                 0801                                     
+                     0008                 12DB                 DIV R1, R3, R3      
+SUBTRACT             0009                 16D3                 SUB R3, R3, R3      
+                     000A                 0401                                     
+                     000B                 0000                                     
+ZERO                 000C                 12D9                 DIV R1, R3, R1      
+                     000D                 0A01                                     
+                     000E                 0E01                                     
+WRONG_END            000F                 1B4D                 MUL R5, R5, R5      
+END                  0010                 1B45                 ADD R5, R5, R5      
+                     0011                 F0FF                                     
+HALT                 80FF                 0000                                     
+                     8200                 9E00                                     
+                     8201                 8000                                     

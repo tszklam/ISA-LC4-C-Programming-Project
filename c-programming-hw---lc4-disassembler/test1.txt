@@ -1,0 +1,37 @@
+<label>              <address>            <contents>           <assembly>          
+                     0000                 F0E0                                     
+                     0001                 F0FF                                     
+TRAP_DRAW_CHECKERS   80E0                 9000                                     
+                     80E1                 D1C0                                     
+                     80E2                 9280                                     
+                     80E3                 947C                                     
+                     80E4                 9600                                     
+ROW_LOOP             80E5                 9800                                     
+COL_LOOP             80E6                 5AE1                 AND R5, R3, #1      
+                     80E7                 5D21                 AND R6, R4, #1      
+                     80E8                 5D5E                 XOR R6, R5, R6      
+                     80E9                 0A0C                                     
+                     80EA                 9A80                                     
+                     80EB                 1B4B                 MUL R5, R5, R3      
+                     80EC                 9C04                                     
+                     80ED                 1B4E                 MUL R5, R5, R6      
+                     80EE                 130E                 MUL R1, R4, R6      
+                     80EF                 1A45                 ADD R5, R1, R5      
+                     80F0                 1A05                 ADD R5, R0, R5      
+                     80F1                 9C1F                                     
+                     80F2                 7D40                                     
+                     80F3                 7D41                                     
+                     80F4                 7D42                                     
+                     80F5                 7D43                                     
+UPDATE_COL           80F6                 1921                 ADD R4, R4, #1      
+                     80F7                 9480                                     
+                     80F8                 2882                                     
+                     80F9                 0BEC                                     
+                     80FA                 16E1                 ADD R3, R3, #1      
+                     80FB                 271F                                     
+                     80FC                 0401                                     
+                     80FD                 CFE7                                     
+CHECKER_END          80FE                 8000                                     
+HALT                 80FF                 0000                                     
+                     8200                 9E00                                     
+                     8201                 8000                                     
